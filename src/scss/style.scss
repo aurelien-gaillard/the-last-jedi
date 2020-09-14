@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?99553285');
+    src: url('../font/fontello.eot?99553285#iefix') format('embedded-opentype'),
+         url('../font/fontello.woff2?99553285') format('woff2'),
+         url('../font/fontello.woff?99553285') format('woff'),
+         url('../font/fontello.ttf?99553285') format('truetype'),
+         url('../font/fontello.svg?99553285#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.icon-left-open { 
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+   
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+     }
+
+
+$container_width: 800px;
+$browser_width: 100%;
+$bg_color: #E0E0E0;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: $bg_color;
+}
+
+nav {
+    display: flex;
+    background-color: #666666;
+
+        a {
+            text-decoration: none;
+            color: #E0E0E0;
+            padding: 0.2em 1em;
+        }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background: $bg_color url('/img/welcome.jpg') center/cover no-repeat;
+
+        h1 {
+            font-size: 2em;
+            font-weight: 400;
+            margin: 0;
+            color: white;
+        }
+
+        .subtitle {
+            color: $bg_color;
+        }
+}
+
+.plot{
+    width: $container_width;
+    margin-bottom: 1em;
+    section {
+        display: flex;
+
+        .poster img{
+            width: 200px;
+        }
+
+        article {
+            padding-left: 1em;
+        }
+        .subtitle {
+            font-size: 1.5em;
+        }
+    }
+}
+
+.characters {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    background: url('/img/rey-standing.jpg') center/cover no-repeat;
+
+        .pic_characters {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                border-radius: 50%;
+                display: block;
+                margin: 0 0.2em;
+            }
+            .xtra-small {
+                width: 2em;
+                height: 2em;
+            }
+            .small {
+                width: 2.5em;
+                height: 2.5em;
+            }
+            .medium {
+                width: 3em;
+                height: 3em;
+            }
+            .big {
+                width: 3.5em;
+                height: 3.5em;
+            }
+        }
+}
+
+.graph {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0 1em;
+
+            .grey_block {
+                width: 6em;  
+                background-color: grey;
+
+                &_75 {
+                    height: 6em;
+                }
+                &_90 {
+                    height: 7em;
+                }
+                &_85 {
+                    height: 6.5em;
+                }
+            }
+
+            .website {
+                font-size: 0.7em;
+            }
+        }
+}
+
+.mark_hamill {
+    width: $container_width;
+    display: flex;
+        
+    img {
+        width: 10em;
+    }
+    article {
+        padding: 0 1em;
+    }
+}
+
+.actors_list {
+    display: flex;
+    
+    .actor {
+        margin: 0.5em;
+        display: flex;
+        position: relative;
+
+            img {
+                width: 6em;
+            }
+            p {
+                text-align: center;
+                margin: 0;
+                background-color: rgba(0,0,0,0.5);
+                color: white;
+                position: absolute;
+                bottom: 0;
+                width: 6em;    
+            }
+    }
+}
+
+
+.arrows {
+    height: 25em;
+    background: url('/img/gallery.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        color: white;
+    }
+}
+
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
